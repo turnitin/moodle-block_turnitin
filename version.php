@@ -5,3 +5,4 @@ $plugin->requires = 2012062500; // YYYYMMDDHH (This is the release version for M
 $plugin->maturity  = MATURITY_STABLE;
 $plugin->release  = '2.3+';
 $plugin->dependencies = array('mod_turnitintooltwo' => 2014012407);
+$plugin->component = 'block_turnitin';
