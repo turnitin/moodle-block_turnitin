@@ -3,14 +3,16 @@ Turnitin block for Moodle
 
 Please be aware that the **Develop** branch should not be considered production ready, although it contains the latest fixes and features it may contain bugs. It should be avoided in favour of the **Master** branch which is the latest available branch that has been through the QA process. Please make any pull requests you would like to make to the develop branch.
 
+To see what has changed in recent versions of this block, see the [CHANGELOG](https://github.com/turnitin/moodle-block_turnitin/blob/master/CHANGELOG.md).
+
 Installation
 ------------
 
 Before installing this plugin firstly make sure you are logged in as an Administrator and that you are using Moodle 2.3 or higher.
 
-Note: the [TURNITINTOOLTWO](https://github.com/jmcgettrick/moodle-mod_turnitintooltwo) module must be installed before you can use the block.
+Note: the [TURNITINTOOLTWO](https://github.com/turnitin/moodle-mod_turnitintooltwo) module must be installed before you can use the block.
 
-This block plugin enables non-administrator moodle users to migrate courses from Turnitin to Moodle. 
+This block plugin enables non-administrator moodle users to migrate courses from Turnitin to Moodle.
 
 To install, you need to do is copy all the files to the /blocks/turnitin directory in your Moodle installation. You should then go to `"Site Administration" > "Notifications"` and follow the on screen instructions.
 
