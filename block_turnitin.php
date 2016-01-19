@@ -17,15 +17,8 @@ class block_turnitin extends block_base {
 		$output = '';
 
 		if (!empty($USER->id) && has_capability('moodle/course:create', context_system::instance())) {
-			if ($CFG->branch <= 25) {
-				$jsurl = new moodle_url($CFG->wwwroot.'/mod/turnitintooltwo/jquery/jquery-1.8.2.min.js');
-	        	$PAGE->requires->js($jsurl, true);
-	        	$jsurl = new moodle_url($CFG->wwwroot.'/mod/turnitintooltwo/jquery/block_turnitin.js');
-	        	$PAGE->requires->js($jsurl, true);
-	        } else {
-	        	$PAGE->requires->jquery();
-	        	$PAGE->requires->jquery_plugin('turnitintooltwo-block', 'mod_turnitintooltwo');
-	        }
+			$PAGE->requires->jquery();
+	        $PAGE->requires->jquery_plugin('block-turnitin', 'block_turnitin');
 
 	        $cssurl = new moodle_url($CFG->wwwroot.'/mod/turnitintooltwo/css/styles_block.css');
         	$PAGE->requires->css($cssurl);
