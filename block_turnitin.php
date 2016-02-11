@@ -16,6 +16,14 @@ class block_turnitin extends block_base {
 
 		$output = '';
 
+		// Show link to Helpdesk wizard
+		if (!empty($USER->id) && has_capability('moodle/course:manageactivities', context_system::instance())) {
+			$output = $OUTPUT->box(
+								html_writer::tag('p',
+									html_writer::link($CFG->wwwroot.'/mod/turnitintooltwo/extras.php?cmd=supportwizard',
+										get_string('helpdesklink', 'block_turnitin'))));
+		}
+
 		if (!empty($USER->id) && has_capability('moodle/course:create', context_system::instance())) {
 			$PAGE->requires->jquery();
 	        $PAGE->requires->jquery_plugin('block-turnitin', 'block_turnitin');
