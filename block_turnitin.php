@@ -42,4 +42,8 @@ class block_turnitin extends block_base {
 
 	    return $this->content;
     }
+
+    public function applicable_formats() {
+        return array('all' => true, 'mod' => true, 'tag' => false);
+    }
 }
