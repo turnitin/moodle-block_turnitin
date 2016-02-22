@@ -14,10 +14,11 @@ class block_turnitin extends block_base {
 			return $this->content;
 		}
 
+		$config = turnitintooltwo_admin_config();
 		$output = '';
 
-		// Show link to Helpdesk wizard
-		if (!empty($USER->id) && has_capability('moodle/course:manageactivities', context_system::instance())) {
+		// Show link to Helpdesk wizard if enabled and the logged in user is an instrutor.
+		if (!empty($USER->id) && $config->helpdeskwizard && has_capability('moodle/course:manageactivities', context_system::instance())) {
 			$output = $OUTPUT->box(
 								html_writer::tag('p',
 									html_writer::link($CFG->wwwroot.'/mod/turnitintooltwo/extras.php?cmd=supportwizard',
