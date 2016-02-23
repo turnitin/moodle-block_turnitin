@@ -1,3 +1,11 @@
+### Date:       2016-February-23
+### Release:    v2016011104
+
+- Migration links renamed to restoration.
+- Javascript moved from mod.
+
+---
+
 ### Date:       2015-October-01
 ### Release:    v2015040110
 
