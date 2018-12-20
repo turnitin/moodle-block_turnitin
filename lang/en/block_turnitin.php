@@ -5,3 +5,4 @@ $string['turnitin:myaddinstance'] = 'Add a new Turnitin block to the My Moodle p
 $string['turnitin'] = 'Turnitin';
 $string['coursestomigrate'] = 'You have {$a} classes available to restore from Turnitin';
 $string['helpdesklink'] = 'Need Help with Turnitin?';
+$string['privacy:no_data_reason'] = "The Turnitin block doesn't store any personal data.";

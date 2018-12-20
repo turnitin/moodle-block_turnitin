@@ -1,3 +1,10 @@
+### Date:       2018-December-18
+### Release:    v2018121801
+
+- Moodle's Privacy API is now supported. (Thanks to @olive007).
+
+---
+
 ### Date:       2016-April-11
 ### Release:    v2016011105
 
